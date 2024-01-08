@@ -26,9 +26,10 @@ body{
 }
 
 .ordercard{
-    height: 600px;
+    /* height: 600px; */
     background: white;
     width: 450px;
+    height: 640px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -40,6 +41,13 @@ body{
 
 .head-img{
     border-radius: 15px 15px 0 0;
+}
+
+.intro{
+    border: 1px none;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 h2{
@@ -67,7 +75,7 @@ h2, h3{
     display: grid;
     grid-template-columns: 100px 100px 100px 100px;
     grid-template-rows: 30px 30px;
-    margin: 10px;
+    margin: 30px 25px 10px;
 }
 
 .price{
@@ -83,6 +91,11 @@ a{
     font-weight: 700;
 }
 
+a:hover{
+    color: hsl(258, 73%, 71%);
+    text-decoration: none;
+}
+
 button{
     width: 400px;
     margin: 10px;
@@ -95,4 +108,16 @@ button{
 .paybtn{
     background: hsl(245, 75%, 52%);
     color: var(--color-paleblue);
+}
+
+.paybtn:hover{
+    background: hsl(251, 79%, 63%);
+}
+
+.cancelbtn:hover{
+    color: var(--color-darkblue);
+}
+
+a, button{
+    cursor: pointer;
 }
