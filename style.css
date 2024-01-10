@@ -17,14 +17,108 @@
 
 body{
     background: hsl(225, 100%, 94%);
-    height: 100vh;
+    min-height: 100vh;
     font-size: 16px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .ordercard{
     height: 600px;
     background: white;
-    width: 500px;
+    width: 450px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.head-img{
+    border-radius: 15px 15px 0 0;
+}
+
+.intro{
+    border: 1px none;
+    height: 60px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h2{
+    margin: 20px;
+}
+
+p, .cancelbtn{
+    color: var(--color-desaturblue);
+}
+
+h2, h3{
+    font-weight: 900;
+}
+
+.music-icon{
+    float: left;
+    margin-top: 5px;
+}
+
+.middle{
+    width: 400px;
+    background: var(--color-paleblue);
+    border-radius: 10px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 100px 120px 80px 80px;
+    grid-template-rows: 30px 30px;
+    margin: 30px 25px 10px;
+}
+
+.price{
+    display: grid;
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 10px;
+}
+
+a{
+    margin-top: 15px;
+    margin-right: 20px;
+    grid-column: 4;
+    font-weight: 700;
+}
+
+a:hover{
+    color: hsl(258, 73%, 71%);
+    text-decoration: none;
+}
+
+button{
+    width: 400px;
+    margin: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.paybtn{
+    background: hsl(245, 75%, 52%);
+    color: var(--color-paleblue);
+}
+
+.paybtn:hover{
+    background: hsl(251, 79%, 63%);
+}
+
+.cancelbtn:hover{
+    color: var(--color-darkblue);
+}
+
+a, button{
+    cursor: pointer;
 }
